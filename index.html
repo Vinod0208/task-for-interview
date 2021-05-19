@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+    <title>Card Input</title>
+</head>
+<body onload="getItem()">
+    <div id="card">
+        <h3 id="card_no"> Card Number : 
+          <div id="flex">
+            <span>
+              <input  class="number" type="text" maxlength="4" id="one">
+              <input class="number" type="text" maxlength="4" id="two">
+              <input class="number" type="text" maxlength="4" id="three">
+              <input class="number" type="text" maxlength="4" id="four"></span>
+          </div>
+        </h3>
+        <button id="btn" onclick="save()">Submit</button>
+    </div>
+    <p id="msg" align="center"></p>
+    <table align="center" cellpadding="10" width="80%">
+        <thead>
+          <tr bgcolor="skyblue">
+            <th>Index</th>
+            <th>Number</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="itemlist">
+          <tr>
+            
+          </tr>
+        </tbody>
+       
+      </table>
+</body>
+</html>
